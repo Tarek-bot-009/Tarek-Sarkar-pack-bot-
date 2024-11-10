@@ -5,7 +5,7 @@ module.exports.config = {
   name: "autoseen",
   version: "1.0.0",
   permission: 2,
-  credits: "ALVI",
+  credits: "nazrul",
   description: "turn on/off automatically seen when new messages are available",
   prefix: true,
   category: "system",
