@@ -6,9 +6,9 @@
     "warn": "yellow",
     "available": "blue, red, yellow, white, green, blueBright",
     "editNames": {
-      "success": "• ALVI IN RUNNING •",
-      "error":   "• ALVI IN ERROR   •",
-      "warn":    "• ALVI IN WARNING •"
+      "success": "NAZRUL RUNNING",
+      "error":   "NAZRUL ERROR",
+      "warn":    "NAZRUL WARNING"
     }
   },
   "logger": {
@@ -19,10 +19,10 @@
       "evntLoader": "blue"
     },
     "strings": {
-      "cmdStarter": "• ALVI INPORTING COMMANDS •",
-      "evntStarter": "• ALVI INPORTING EVENTS •",
-      "cmdLoader": "• ALVI COMMAND •",
-      "evntLoader": "• ALVI EVENT  •"
+      "cmdStarter": "NAZRUL INPORTING COMMANDS",
+      "evntStarter": "NAZRUL INPORTING EVENTS",
+      "cmdLoader": "NAZRUL COMMAND",
+      "evntLoader": "NAZRUL EVENT"
     }
   }
 }
