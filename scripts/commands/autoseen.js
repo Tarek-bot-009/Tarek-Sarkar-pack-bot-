@@ -5,11 +5,10 @@ module.exports.config = {
   name: "autoseen",
   version: "1.0.0",
   permission: 2,
-  credits: "nazrul",
+  credits: "ryuko",
   description: "turn on/off automatically seen when new messages are available",
   prefix: true,
   category: "system",
-  premium: false,
   usages: "on/off",
   cooldowns: 5,
 };
@@ -24,7 +23,7 @@ if (!fs.existsSync(pathFile))
 
 module.exports. run = async ({ api, event, args }) => {
    try {
-     const logger = require("../../ALVI/catalogs/alvic.js");
+     const logger = require("../../Nayan/catalogs/Nayanc.js");
      if (args[0] == 'on') {
        fs.writeFileSync(pathFile, 'true');
        api.sendMessage('the autoseen function is now enabled for new messages.', event.threadID, event.messageID);
