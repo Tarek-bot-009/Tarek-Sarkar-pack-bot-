@@ -7,16 +7,16 @@
   "notification": false,
   "approval": false,
   "saveState": false,
-  "BOTNAME": "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐡𝐚𝐭",
+  "BOTNAME": "Ami Tarek er personal assistant",
   "PREFIX": "/",
   "OPERATOR": [
-    "100000350435589",
+    "100089702123718",
     ""
   ],
   "ADMINBOT": [
-    "100000350435589",
-    "61553521644574",
-    "100082346106643"
+    "100089702123718",
+    "",
+    ""
   ],
   "OWNER": ["100000350435589"], 
   "APPROVED": [],
