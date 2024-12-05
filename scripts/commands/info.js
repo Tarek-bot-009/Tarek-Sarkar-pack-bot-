@@ -1,15 +1,14 @@
 module.exports.config = {
-    name: "info",
-    version: "1.0.0",
-    permission: 0,
-    credits: "nazrul",
-    prefix: true,
-    description: "",
-    category: "prefix",
-    usages: "",
-    cooldowns: 5,
-    dependencies: 
-	{
+  name: "info",
+  version: "1.0.1", 
+  permssion: 0,
+  credits: "★𝐌𝟗𝐇𝟒𝐌𝐌𝟒𝐃-𝐁𝟒𝐃𝟗𝐋★",
+  prefix:true,
+  description: "Admin and Bot info.",
+  category: "...",
+  cooldowns: 1,
+  dependencies: 
+  {
     "request":"",
     "fs-extra":"",
     "axios":""
@@ -20,38 +19,44 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-		hours = Math.floor(time / (60 * 60)),
-		minutes = Math.floor((time % (60 * 60)) / 60),
-		seconds = Math.floor(time % 60);
+    hours = Math.floor(time / (60 * 60)),
+    minutes = Math.floor((time % (60 * 60)) / 60),
+    seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.postimg.cc/3JpSf0LC/received-1709835639483729.jpg", 
-            
-            "https://i.postimg.cc/28zrCYPW/received-2253672584826375.jpg", 
-            
-            "https://i.postimg.cc/3JpSf0LC/received-1709835639483729.jpg",
+var juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【hh:mm:ss】");
+var link = ["https://i.imgur.com/pwf2rUW.png", 
 
-"https://i.postimg.cc/3JpSf0LC/received-1709835639483729.jpg",
-            
-            "https://i.postimg.cc/28zrCYPW/received-2253672584826375.jpg"];
-  
-var callback = () => api.sendMessage({body:` 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗧𝗢𝗡
-=======================
-𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : ${global.config.BOTNAME}
-𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡 :✢ 𝗡𝗔𝗭𝗥𝗨𝗟✢
-𝗔𝗗𝗗𝗥𝗘𝗦𝗦: 𝗡𝗔𝗢𝗚𝗔𝗢𝗡
-=======𝗖𝗢𝗡𝗧𝗔𝗖𝗧=======
-=======================
-𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞: https://www.facebook.com/ji.la.pi.6
-𝗠𝗔𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗟𝗜𝗡𝗞:
-https://m.me/ji.la.pi.6
-𝗕𝗢𝗧 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX}
-𝗕𝗢𝗧 𝗪𝗢𝗡𝗘𝗥: জিঁলাঁপিঁ
-𝗢𝗧𝗛𝗘𝗥 𝗡𝗘𝗢𝗥𝗠𝗔𝗧𝗧𝗢𝗡 ==============================================
-𝗧𝗢𝗗𝗬 𝗜𝗦 𝗧𝗜𝗠𝗘 : ${juswa} 
-𝗕𝗢𝗧 𝗜𝗦 𝗥𝗨𝗡𝗡𝗜𝗡𝗚 ${hours}:${minutes}:${seconds}.
-𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 ${global.config.BOTNAME} \n=======================
-✢━━━━━ N/S ━━━━━✢
-----❖----- 𝐍𝐀𝐙𝐑𝐔𝐋 -----❖---- `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
+            "https://i.imgur.com/pwf2rUW.png", 
+
+            "https://i.imgur.com/pwf2rUW.png",
+
+            "https://i.imgur.com/Yi0QXnn.jpeg"];
+
+var callback = () => api.sendMessage({body:`•—»✨𝐀𝐝𝐦𝐢𝐧 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✨🌺
+ •┄┅════❁🌺❁════┅┄•
+
+𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : 𝐓𝐀𝐑𝐄𝐊 𝐒𝐀𝐑𝐊𝐀𝐑___//𝟎𝟎𝟕
+
+𝐁𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 : 𝐀d𝐦𝐢𝐧 𝐜𝐨𝐧𝐭𝐫𝐨𝐥 𝐓𝐡𝐢𝐬 𝐑𝐨𝐛𝐨𝐭
+
+•┄┅══❁CONCATET❁══┅┄• 
+
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : https://www.facebook.com/tarek.20.king
+
+•┄┅═══❁🌺❁═══┅┄•\n🌺✨𝐎𝐭𝐡𝐞𝐫𝐬 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧✨🌺\n •┄┅═══❁🌺❁═══┅┄•
+
+TYPE /help
+
+𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : ${global.config.BOTNAME}
+
+𝐁𝐨𝐭 𝐏𝐫𝐞𝐟𝐢𝐱 : ${global.config.PREFIX}
+
+•—»✨ 𝐔𝐩𝐭𝐢𝐦𝐞
+
+𝐓𝐨𝐝𝐚𝐲 𝐈𝐬 𝐓𝐢𝐦𝐞 : ${juswa} 
+
+𝐁𝐨𝐭 𝐈𝐬 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 ${hours}:${minutes}:${seconds}.
+
+𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠  ༄🌺\n｢🕋｣${global.config.BOTNAME}｢🕋｣`,attachment: fs.createReadStream(__dirname + "/cache/cyber.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/cyber.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/cyber.jpg")).on("close",() => callback());
    };
